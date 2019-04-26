@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<section>
+    <h1>
+        Lista de Quizzes
+    </h1>
+
+    <table>
+        <tr>
+            <th align="left" width="200">QUESTION</th>
+            <th align="left" width="200">ANSWER</th>
+        </tr>
+
+        <% for(let quiz of quizzes) { %>
+        <tr>
+            <td><%= quiz.question %>:</td>
+            <td><%= quiz.answer %></td>
+        </tr>
+        <% } %>
+    </table>
+
+</section>
+
+</html>
